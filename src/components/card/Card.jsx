@@ -6,14 +6,19 @@ export class Card extends Component {
         super(props);
         this.state = {}
     }
+
+    edit = (movie)=> {
+        this.props.toggleForm();
+        this.props.nextMovieToPreview(movie);
+    }
+
     render() {
-        console.log(this.props.movie)
         return (
             <div className="card">
                 <div className="img-container">
                     <img className="image" src={this.props.movie.url} alt="" />
-                    <button className='deleteButton'><i className="fa-solid fa-trash-can"></i></button>
-                    <button className='editButton'><i className="fa-solid fa-pen-to-square"></i></button>
+                    <button className='deleteButton' onClick={()=>this.props.deleteMovie(this.props.movie.id)}><i className="fa-solid fa-trash-can"></i></button>
+                    <button className='editButton' onClick={()=>this.edit(this.props.movie)}><i className="fa-solid fa-pen-to-square"></i></button>
                     <button className='infoButton' ><i className="fa-solid fa-info"></i></button>
 
                 </div>

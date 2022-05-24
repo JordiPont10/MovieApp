@@ -1,4 +1,4 @@
-.form{
+.form {
     height: 40%;
     width: 75%;
     margin: 0 auto;
@@ -9,12 +9,77 @@
     gap: 1.5%;
 }
 
-.form input{
+.form input {
     height: 10%;
     width: 80%;
 }
 
-.submit-button{
+.submit-button {
     width: 15%;
     height: 15%;
+}
+
+.closeButton {
+    display: block;
+    height: 10%;
+    width: 9%;
+    position: relative;
+    left: 30%;
+    top: 2%;
+    margin: 1%;
+    line-height: 3;
+    text-align: center;
+    font-weight: bold;
+    font-size: small;
+    border-radius: 50%;
+    border: 2px solid black;
+    color: solid yellow;
+}
+
+.button-container {
+    height: 15%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview-active {
+    width: 60%;
+    margin: 0 0 0 40%;
+}
+
+.add-button {
+    height: 75%;
+    width: 22%;
+    border-radius: 0.25rem;
+    border: 2px solid var(--main-green);
+    color: var(--main-green);
+    font-weight: 800;
+    font-size: var(--main-font-size);
+    outline: none;
+    cursor: pointer;
+}
+
+.form {
+    height: 35%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--container-color);
+    border-radius: .75rem;
+    gap: 2.5%;
+    position: relative;
+}
+
+.input-container {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
