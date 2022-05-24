@@ -1,0 +1,56 @@
+.card {
+    margin: 2.5%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: .75rem;
+    background-color: white;
+    height: 60%;
+    width: 14%;
+}
+
+.img-container {
+    height: 70%;
+    width: 100%;
+    position: relative
+}
+
+.image {
+    border-radius: 0.75rem 0.75rem 0 0;
+    object-fit: cover;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around
+}
+
+.info-item {
+    height: 25%;
+    width: 100%
+}
+
+.deleteButton, .editButton, .infoButton{
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    background: rgba(255, 255, 255, 50%);
+    border: transparent;
+    color: var(--main-green);
+    font-weight: 500;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.5;
+}
+
+.editButton{
+    top: 30%;
+}
+
+.infoButton{
+    top: 55%;
+}
