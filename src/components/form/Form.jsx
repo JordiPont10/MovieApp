@@ -50,7 +50,7 @@ export class Form extends Component {
     }
 
     resetInputsForm = ()=> {
-        this.setState({movie: {id:''. title:'', year:'', url:''}})
+        this.setState({movie: {id:'', title:'', year:'', url:''}})
     }
 
     render() {
